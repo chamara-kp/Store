@@ -82,7 +82,14 @@ const Navbar = () => {
             onClick={() => setVisible(false)}
             className="flex items-center gap-4 p-3"
           >
-            <img className="h-4 rotate-180" src={assets.dropdown_icon} />
+            <Link to="/Home">
+              <img
+                className="h-4 rotate-180"
+                src={assets.dropdown_icon}
+                alt="Back"
+              />
+            </Link>
+
             <p className="cursor-pointer">Back</p>
           </div>
 
