@@ -9,6 +9,7 @@ import Orders from "./pages/Orders";
 import Placeorder from "./pages/Placeorder";
 import Product from "./pages/Product";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -24,12 +25,11 @@ const App = () => {
         <Route path="/placeorder" element={<Placeorder />} />
         <Route path="/product" element={<Product />} />
 
-        {/* TEMP SAFE CART ROUTE (prevents crash) */}
         <Route path="/cart" element={<div>Cart Page</div>} />
 
-        {/* FALLBACK — prevents white screen */}
         <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>
+      <Footer />
     </div>
   );
 };

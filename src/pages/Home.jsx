@@ -4,9 +4,10 @@ import LatestCollections from "../components/LatestCollections";
 import BestSeller from "../components/BestSeller";
 import Ourpolicy from "../components/Ourpolicy";
 import Newsletter from "../components/Newsletter";
+
 const Home = () => {
   return (
-    <div>
+    <div className="w-full">
       <Hero />
       <LatestCollections />
       <BestSeller />

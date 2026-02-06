@@ -1,6 +1,9 @@
 import React from "react";
 
 const Newsletter = () => {
+  const onSubmitHandler = (event) => {
+    event.preventDefault();
+  };
   return (
     <div className="text-center">
       <p className="text-2xl font-medium text-gray-800">
@@ -10,7 +13,10 @@ const Newsletter = () => {
         Enjoy exclusive discounts on our best-selling products for a limited
         time only
       </p>
-      <from className="w-full sm:w-1/2 flex items-center gap-3 mmx-auto my-6 border pl-3">
+      <from
+        onsSubmit={onSubmitHandler}
+        className="w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3"
+      >
         <input
           className="w-full sm:flex-1 outline-none"
           type="emil"
